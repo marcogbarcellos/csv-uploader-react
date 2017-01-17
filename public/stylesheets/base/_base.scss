@@ -1,0 +1,21 @@
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: none;
+}

@@ -1,0 +1,52 @@
+.approved-message {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  @include breakpoint(tablet) {
+    padding-right: 100px;
+  }
+
+  > .icon {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  > .title {
+    color: $color-primary;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    @include breakpoint(tablet) {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  > .description {
+    color: $gray;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 25px;
+    max-width: 600px;
+    margin-bottom: 50px;
+
+    @include breakpoint(tablet) {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+
+    a {
+      color: #1A936F;
+    }
+  }
+
+  .download {
+    max-width: 165px;
+  }
+}
+
+.app {
+  max-width: 85%;
+  margin-top: 60px;
+}

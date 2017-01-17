@@ -1,0 +1,117 @@
+.form-input {
+  position: relative;
+
+  .label {
+    color: $gray;
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 500;
+
+    &.-full {
+      width: 100%;
+    }
+  }
+
+  .input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 2px solid $gray-light;
+    font-size: 1.05rem;
+    background-color: $background;
+    outline: none;
+    transition: .15s ease-in-out;
+    position: relative;
+
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  .btn-lookup {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+}
+
+.Select-control {
+  border-radius: 4px;
+  border: 2px solid $gray-light;
+  font-size: 1.05rem;
+  transition: .15s ease-in-out;
+  height: 54px;
+  outline: none;
+  margin-bottom: 20px;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+  line-height: 52px;
+  font-family: 'Source Sans Pro';
+}
+
+.is-open > .Select-control {
+  border-color: $color-primary;
+
+  .Select-value {
+    color: $color-primary;
+  }
+}
+
+.form-radio {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 10px 10px;
+  position: relative;
+  margin-right: 5px;
+  cursor: pointer;
+
+  > .text {
+    color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .8rem;
+    transition: .25s ease-in-out;
+  }
+
+  .borderer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e9e9e9;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+  }
+
+  > .radio {
+    position: absolute;
+    opacity: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    &:checked + .borderer {
+      border-color: $color-primary;
+    }
+
+    &:checked ~ .text {
+      color: $color-primary;
+    }
+  }
+}

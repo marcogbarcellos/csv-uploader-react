@@ -1,0 +1,54 @@
+.registration {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 65px;
+
+  @include breakpoint(desktop) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  > .text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 350px;
+    line-height: 1.5rem;
+    color: $gray;
+  }
+
+  .btn {
+    margin-bottom: 5px;
+    margin-top: 30px;
+
+    &.-primary {
+      float: right;
+
+      .icon {
+        margin-left: 10px;
+        vertical-align: initial;
+      }
+    }
+
+    &.-secondary {
+      float: left;
+      padding-left: 0;
+
+      .icon {
+        margin-right: 10px;
+        vertical-align: initial;
+      }
+    }
+  }
+
+  .description {
+    font-size: 1.15rem;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #ccc;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,42 @@
+$black: #000000;
+$white: #FFFFFF;
+$gray: #999999;
+$gray-light: #E9E9E9;
+$gray-dark: #222222;
+
+$color-primary: #001F37;
+$color-secondary: #FFD166;
+
+$background: $white;
+
+$font-size-base:                 .85rem !default;
+$font-size-lg:                   1rem !default;
+$font-size-sm:                   .875rem !default;
+
+$container-width:                900px !default;
+
+$btn-line-height:                1.25 !default;
+$btn-font-weight:                normal !default;
+$btn-box-shadow:                 none !default;
+$btn-border-width:               1px !default;
+
+$btn-primary-color:              $white !default;
+$btn-primary-bg:                 $color-primary !default;
+$btn-primary-border:             $btn-primary-bg !default;
+
+$btn-secondary-color:            $color-primary !default;
+$btn-secondary-bg:               $white !default;
+$btn-secondary-border:           $btn-secondary-bg !default;
+
+$btn-danger-color:               $white !default;
+
+$btn-padding-x:                  2.25rem !default;
+$btn-padding-y:                  .8rem !default;
+$btn-padding-x-lg:               1.75rem !default;
+$btn-padding-y-lg:               .75rem !default;
+$btn-padding-x-sm:               .5rem !default;
+$btn-padding-y-sm:               .25rem !default;
+
+$btn-border-radius:              4px !default;
+$btn-border-radius-lg:           $btn-border-radius !default;
+$btn-border-radius-sm:           $btn-border-radius !default;

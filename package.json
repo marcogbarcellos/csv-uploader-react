@@ -1,0 +1,72 @@
+{
+  "name": "csv-uploader-react",
+  "version": "0.0.1",
+  "description": "Reactjs File Uploader",
+  "main": "server.js",
+  "repository": {
+    "url": "https://github.com/marcogbarcellos/csv-uploader-react.git",
+    "type": "git"
+  },
+  "author": "Marco Barcellos <marcogbarcellos@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ava": "^0.16.0",
+    "axios": "^0.15.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "eslint-config-xo": "^0.17.0",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^0.9.0",
+    "flow-bin": "^0.33.0",
+    "google-maps": "^3.2.1",
+    "lodash": "^4.17.1",
+    "moment": "^2.15.2",
+    "node-sass": "^3.10.1",
+    "nuka-carousel": "^2.0.3",
+    "rc-collapse": "^1.6.9",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "react-input-mask": "^0.7.5",
+    "react-notification-system": "^0.2.10",
+    "react-router": "next",
+    "react-select": "^1.0.0-rc.2",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
+    "xo": "^0.17.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --host 0.0.0.0 --progress --inline --port 8000",
+    "test": "yarn lint && yarn ava && yarn flow",
+    "build": "./node_modules/.bin/webpack --progress -p",
+    "ava": "ava --verbose",
+    "lint": "xo",
+    "flow": "./node_modules/flow-bin/cli.js check"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true,
+    "esnext": true,
+    "extends": "xo-react",
+    "jsx-quotes": "prefer-single",
+    "globals": [
+      "localStorage",
+      "FileReader"
+    ],
+    "rules": {
+      "unicorn/filename-case": 0,
+      "import/no-unassigned-import": 0,
+      "react/forbid-component-props": 0,
+      "react/jsx-no-bind": 0,
+      "react/jsx-boolean-value": 0,
+      "brace-style": 0
+    }
+  }
+}

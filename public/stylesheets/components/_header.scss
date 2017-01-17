@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+  min-height: 80px;
+  line-height: 80px;
+  margin-bottom: 40px;
+
+  > .step {
+    color: rgba($color-primary, .1);
+    font-size: 7rem;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  > .title {
+    color: $color-primary;
+    font-size: 1.8rem;
+  }
+}

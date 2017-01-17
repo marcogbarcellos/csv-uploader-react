@@ -1,0 +1,79 @@
+@import 'vendors/bootstrap/bootstrap';
+@import 'vendors/rc-collapse/rc-collapse';
+
+@import 'settings/settings';
+@import 'tools/clearfix';
+@import 'tools/buttons';
+@import 'tools/responsive';
+@import 'generic/generic';
+@import 'base/base';
+@import 'objects/buttons';
+@import 'objects/form-input';
+@import 'components/header';
+@import 'components/intro';
+@import 'components/registration';
+@import 'components/approved';
+
+.npl {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include breakpoint(tablet) {
+    padding-right: auto;
+  }
+}
+
+.hide-mobile {
+  display: none;
+
+  @include breakpoint(tablet) {
+    display: block;
+  }
+}
+
+.slider-frame,
+.slider,
+.slider-list {
+  min-height: calc(100vh - 65px) !important;
+  overflow: auto;
+}
+
+.-mt10 {
+  margin-top: 10px;
+}
+
+.credit-card {
+  padding: 50px 25px 25px;
+
+  @include breakpoint(tablet) {
+    padding-bottom: 15px;
+  }
+
+  .icon {
+    width: 85px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+}
+
+.credit-header {
+  display: inline-block;
+
+  > .title {
+    color: $color-primary;
+    font-size: 2.5rem;
+  }
+
+  > .description {
+    margin-bottom: 50px;
+    font-size: 1.15rem;
+    color: #999;
+  }
+}
+
