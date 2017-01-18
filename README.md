@@ -4,17 +4,14 @@ This is a simple Reactjs projects that integrates with the [Restify Api] (https:
 
 It`s a file uploader that updates a table in real time regarding the records inserted on the database. 
 
-
-## Installation
-
-```
-npm install
-```
-
-
-## Usage
+## Installation and Usage
 
 Run the [Backend Project](https://github.com/marcogbarcellos/csv-uploader) first, then:
+
+```
+npm install -g yarn
+```
+Then 
 
 ```
 yarn && yarn start

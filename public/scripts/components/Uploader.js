@@ -56,7 +56,7 @@ export default class Uploader extends Component {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <Header title="Csv Uploader" step="1"/>
+            <Header title="Csv Uploader" step="....."/>
           </div>
           
           <div className="col-md-12">
@@ -66,14 +66,7 @@ export default class Uploader extends Component {
             </form>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-12">
-            <div className="panel panel-default">
-              <div class="panel-heading">Records Inserted</div>
-              <UploadTable items={this.state.items} />   
-            </div>
-          </div>
-        </div>  
+        <UploadTable items={this.state.items} />   
         <NotificationSystem ref={notificationSystem => {this.notificationSystem = notificationSystem}}/>
       </div>  
       

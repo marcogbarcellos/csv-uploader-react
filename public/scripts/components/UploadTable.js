@@ -14,10 +14,10 @@ export default class UploadTable extends Component {
 	            <th>Category</th>
 	            <th>Name</th>
 	            <th>Address</th>
-	            <th>Expense description</th>
-	            <th>Pre-tax amount</th>
-	            <th>Tax name</th>
-	            <th>Tax amount</th>
+	            <th>Description</th>
+	            <th>Tax Name</th>
+	            <th>Pre-tax</th>
+	            <th>Tax</th>
 	          </tr>
 	        </thead>
 	        <tbody>
@@ -25,12 +25,12 @@ export default class UploadTable extends Component {
 		        	<tr>
 		        	  <td>{item.date}</td>
 		            <td>{item.category}</td>
-		            <td>{item.name}</td>
-		            <td>{item.address}</td>
-		            <td>{item.expenseDescription}</td>
-		            <td>{item.preTaxAmount}</td>
-		            <td>{item.taxName}</td>
-		            <td>{item.taxAmount}</td>
+		            <td>{item.employeename}</td>
+		            <td>{item.employeeaddress}</td>
+		            <td>{item.expensedescription}</td>
+		            <td>{item.taxname}</td>
+		            <td>{item.pretaxamount}</td>
+		            <td>{item.taxamount}</td>
 		          </tr>
 		        ))}
 	        </tbody>
@@ -38,9 +38,7 @@ export default class UploadTable extends Component {
       )	
   	} else {
   		records = (
-  			<div >
-  				<span> no data </span>
-        </div>
+  			<div></div>
       )
   	}
   	return (
